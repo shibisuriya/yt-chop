@@ -5,7 +5,7 @@ A simple cli tool to download and cut youtube videos.
 # Usage
 
 ```bash
-yt-chop <youtube-video-url> -s <starting-time> -e <ending-time>
+yt-snip <youtube-video-url> -s <starting-time> -e <ending-time>
 ```
 
 The format of `starting time` and `ending time` must be
@@ -14,7 +14,7 @@ The format of `starting time` and `ending time` must be
 For example,
 
 ```bash
-yt-chop https://www.youtube.com/watch?v=KeaXqgR5cvI -s '0:03' -t '0:14'
+yt-snip https://www.youtube.com/watch?v=KeaXqgR5cvI -s '0:03' -t '0:14'
 ```
 
 ## Assumptions
@@ -26,7 +26,7 @@ yt-chop https://www.youtube.com/watch?v=KeaXqgR5cvI -s '0:03' -t '0:14'
   is assumed to be the time at which the video ends.
 
 - If both starting and ending time are not supplied, then
-  yt-chop just downloads the youtube video.
+  yt-snip just downloads the youtube video.
 
 # Requirements
 
