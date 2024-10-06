@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  yt-snip:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        TAGS: ${TAGS} # Pass the TAGS environment variable from the host
+    image: yt-snip
+    volumes:
+      - ${PWD}/yt-snips:/root/yt-snips
+    environment:
+      - DEBIAN_FRONTEND=noninteractive # Set the non-interactive mode for apt
