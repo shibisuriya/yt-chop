@@ -31,7 +31,10 @@ def main():
 
     args = parser.parse_args()
 
-    download_youtube_video(args.url)
+    try:
+        download_youtube_video(args.url)
+    except Exception as e:
+        print("Downloading failed!")
 
 
 if __name__ == "__main__":
