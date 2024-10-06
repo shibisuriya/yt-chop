@@ -1,5 +1,6 @@
 import argparse
 import subprocess
+from helpers import download_youtube_video
 
 
 def download_video(url):
@@ -30,11 +31,7 @@ def main():
 
     args = parser.parse_args()
 
-    print(args)
-
-    # Step 1: Download the video
-    print(f"Downloading video from {args.url}...")
-    # download_video(args.url)
+    download_youtube_video(args.url)
 
 
 if __name__ == "__main__":
